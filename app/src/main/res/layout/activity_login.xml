@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorActivityBackground"
+    tools:context=".activities.LoginActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/mobileEditText"
+                style="@style/TextStyleRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_16dp"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="@dimen/text_size_8"
+                android:elevation="@dimen/size_2dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/size_8dp" />
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    style="@style/TextStyleRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/size_16dp"
+                    android:layout_marginTop="@dimen/size_16dp"
+                    android:layout_marginStart="@dimen/size_16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:drawablePadding="@dimen/text_size_8"
+                    android:elevation="@dimen/size_2dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="@dimen/size_8dp"/>
+
+            <Button
+                android:id="@+id/loginButton"
+                style="@style/TextStyleMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_16dp"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_marginTop="@dimen/size_16dp"
+                android:background="@drawable/button_background"
+                android:minHeight="@dimen/size_40dp"
+                android:text="Login"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/signUpText"
+                style="@style/TextStyleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/size_32dp"
+                android:padding="@dimen/size_8dp"
+                android:layout_marginTop="@dimen/size_8dp"
+                android:text="Sign up"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
