@@ -25,7 +25,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/mobileEditText"
+                android:id="@+id/emailEditText"
                 style="@style/TextStyleRegular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

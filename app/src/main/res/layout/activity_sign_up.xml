@@ -81,18 +81,18 @@
         android:inputType="textPassword"
         android:maxLines="1"
         android:padding="@dimen/size_8dp"
-        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/nextButton"
+        android:id="@+id/signUpButton"
         style="@style/TextStyleMedium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/size_16dp"
         android:layout_marginRight="@dimen/size_16dp"
-        android:layout_marginBottom="@dimen/size_32dp"
+        android:layout_marginBottom="@dimen/size_64dp"
         android:background="@drawable/button_background"
         android:minHeight="@dimen/size_40dp"
         android:text="Sign up"
