@@ -22,17 +22,9 @@ class SignUpActivity : AppCompatActivity() {
             database.userDao().addUser(User(fullName = nameText.text.toString().trim(),
                     email = emailText.text.toString().trim(), password = passwordText.text.toString().trim()))
             showMessage("Signup Successfull")
-            finishAllActivities()
+            finish()
         } else {
             showMessage("Please enter all fields to signup.")
         }
     }
-
-    private fun finishAllActivities() {
-        val homeIntent = Intent(this, HomeActivity::class.java)
-        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-        startActivity(homeIntent)
-        finish()
-    }
-
 }

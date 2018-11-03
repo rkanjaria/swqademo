@@ -7,20 +7,16 @@
     android:background="@color/colorActivityBackground"
     tools:context=".activities.SignUpActivity">
 
-    <TextView
-        android:id="@+id/signUpText"
-        style="@style/TextStyleBold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/size_32dp"
-        android:text="Sign up"
-        android:textAllCaps="true"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/text_size_20"
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/size_130dp"
+        android:layout_height="@dimen/size_130dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginBottom="@dimen/size_48dp"
+        app:layout_constraintBottom_toTopOf="@+id/nameText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/nameText"
